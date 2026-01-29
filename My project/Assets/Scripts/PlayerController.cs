@@ -34,16 +34,15 @@ public class PlayerController : MonoBehaviour
         OnPlayerDeath?.Invoke();
         enabled = false;
     }
+    public static event Action OnPipePassed;
+    bool scored = false;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("earned point");
-        /*
-        if (other.CompareTag("Player") && !scored)
+        if (other.CompareTag("Pipe") && !scored)
         {
             scored = true;
             OnPipePassed?.Invoke();
         }
-        */
     }
 }

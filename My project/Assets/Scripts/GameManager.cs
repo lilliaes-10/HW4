@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    /*
     void OnEnable()
     {
-        Bird.OnPlayerDeath += StopGame;
+        PlayerController.OnPlayerDeath += StopGame;
     }
 
     void OnDisable()
     {
-        Bird.OnPlayerDeath -= StopGame;
+        PlayerController.OnPlayerDeath -= StopGame;
     }
 
     void StopGame()
     {
         Time.timeScale = 0f;
     }
-    */
+    
 }

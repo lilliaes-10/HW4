@@ -22,12 +22,12 @@ public class ScoreManager : MonoBehaviour
 
     void OnEnable()
     {
-        //PlayerController.OnPipePassed += AddScore;
+        PlayerController.OnPipePassed += AddScore;
     }
 
     void OnDisable()
     {
-        //PlayerController.OnPipePassed -= AddScore;
+        PlayerController.OnPipePassed -= AddScore;
     }
 
     void AddScore()
